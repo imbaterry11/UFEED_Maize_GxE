@@ -4,14 +4,14 @@ This repo includes codes for generating the models needed for 2024 Maize_GxE com
 ### Follow this order to generate models and do model prediction
 1) Run 'UFEED_GxE_train_data_processing.R' in R to generate input files for model training. <br />
    The files generated from this step are:
-   * 'harvest_data_train.csv': input training file for the harvest date prediction model. Ready to use model can be found here:
-   * 'yield_data_train_per_env.csv': input training file for the mean yield per env model and the genotype effect model. Ready to use model can be found here:
-   * 'yield_data_test_per_env.csv': internal testing file for the mean yield per env model and the genotype effect model (internal testing was not included in the script). Ready to use model can be found here:
+   * 'harvest_data_train.csv': input training file for the harvest date prediction model.
+   * 'yield_data_train_per_env.csv': input training file for the mean yield per env model and the genotype effect model. 
+   * 'yield_data_test_per_env.csv': internal testing file for the mean yield per env model and the genotype effect model (internal testing was not included in the script).
 2) Run 'UFEED_models_training.ipynb' in Jupyter Notebook to generate the three models. <br />
    The folders generated from this step are:
-   * 'maize_harvest_model': an AutoGluon model for the prediction of harvest date
-   * 'maize_yield_model_env': an AutoGluon model for the prediction of mean yield per env
-   * 'maize_yield_model_geno': an AutoGluon model for the prediction of genotype effect
+   * 'maize_harvest_model': an AutoGluon model for the prediction of harvest date. Ready to use model can be found here: [link](https://cornell.box.com/s/wcmz1pn08q0demw4p6osu52jk8kk1p1i)
+   * 'maize_yield_model_env': an AutoGluon model for the prediction of mean yield per env. Ready to use model can be found here: [link](https://cornell.box.com/s/0z2yzjhsgi5ctm4xv7pvay2pi4i4za6n)
+   * 'maize_yield_model_geno': an AutoGluon model for the prediction of genotype effect. Ready to use model can be found here: [link](https://cornell.box.com/s/ivhgmmx6069jo2k4ygomwtz7cfdg83h1)
 3) Run 'UFEED_GxE_test_data_harvest_date_pred.R' in R to generate input files for harvest date prediction. <br />
    The file generated from this step is:
    * 'harvest_data_test.csv': input file for harvest date prediction
