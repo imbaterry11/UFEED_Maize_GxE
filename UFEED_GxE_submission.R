@@ -1,5 +1,3 @@
-#Testing data processing
-
 #load libraries
 require(chillR)
 require(dormancyR)
